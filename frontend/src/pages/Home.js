@@ -6,19 +6,32 @@ const Home = () => {
     const [books, setBooks] = useState([]);
     const [search, setSearch] = useState('');
     const [loading, setLoading] = useState(true);
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
+    // FIXED: Yahan direct Vercel ka link dalna behtar hai taake koi confusion na ho
+    const API_URL = "https://book-store-api-internship-task.vercel.app";
 
     useEffect(() => {
         const fetchBooks = async () => {
             setLoading(true);
             try {
+                // Search filter wala bonus bhi handle ho raha hai yahan
                 const res = await axios.get(`${API_URL}/api/books?search=${search}`);
+                
+                // MongoDB se data array mein aata hai, use handle kar rahe hain
                 setBooks(res.data.books || res.data);
-            } catch (err) { console.error(err); }
+            } catch (err) { 
+                console.error("Fetch error:", err); 
+            }
             setLoading(false);
         };
-        fetchBooks();
-    }, [search, API_URL]);
+
+        // Thora delay (Debounce) dene ke liye taake har word par request na jaye (Optional)
+        const timeoutId = setTimeout(() => {
+            fetchBooks();
+        }, 500);
+
+        return () => clearTimeout(timeoutId);
+    }, [search]); // Jab search change hoga, ye dobara chalega
 
     return (
         <div className="min-h-screen bg-slate-50 pb-20">
@@ -40,7 +53,11 @@ const Home = () => {
                     <div className="text-center py-20 text-indigo-400 font-bold animate-pulse">Fetching Books...</div>
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {books.map(book => <BookCard key={book._id} book={book} />)}
+                        {books.length > 0 ? (
+                            books.map(book => <BookCard key={book._id} book={book} />)
+                        ) : (
+                            <div className="col-span-full text-center text-gray-500">No books found for "{search}"</div>
+                        )}
                     </div>
                 )}
             </div>
