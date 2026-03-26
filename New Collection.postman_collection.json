@@ -1,0 +1,433 @@
+{
+  "info": {
+    "_postman_id": "02aa7ce0-1abc-40b2-b838-30f4f45067e6",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53463944",
+    "_collection_link": "https://go.postman.co/collection/53463944-02aa7ce0-1abc-40b2-b838-30f4f45067e6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5000/api/books",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzJmOWQ3OWY2MmQ0NTc1NTQ0ODkyNiIsImlhdCI6MTc3NDQ2NTIyMCwiZXhwIjoxNzc0NTUxNjIwfQ.jV8VDW9LReEvqcg0Qs2G73QIHv9h_MkV5KDPbn6iNGU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"HELLO WORLD\",\r\n  \"author\": \"Fizza Fatima\",\r\n  \"price\": 2500,\r\n  \"isbn\": \"978-123456723\",\r\n  \"publishedDate\": \"2026-03-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books/69c4375411bba2e2d1d85313",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books",
+            "69c4375411bba2e2d1d85313"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/auth/login",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzJmOWQ3OWY2MmQ0NTc1NTQ0ODkyNiIsImlhdCI6MTc3NDQ2NTE4MiwiZXhwIjoxNzc0NTUxNTgyfQ.xTndKK5yvQAQMp0pcbTH-FjjJKNutfvJ8ksEMRO5Yzk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"fizza.abbaspk@gmail.com\",\r\n  \"password\": \"1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzJmOWQ3OWY2MmQ0NTc1NTQ0ODkyNiIsImlhdCI6MTc3NDQ2NTIyMCwiZXhwIjoxNzc0NTUxNjIwfQ.jV8VDW9LReEvqcg0Qs2G73QIHv9h_MkV5KDPbn6iNGU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"HELLO WORLD\",\r\n  \"author\": \"Fizza Fatima\",\r\n  \"price\": 1500,\r\n  \"isbn\": \"978-123456723\",\r\n  \"publishedDate\": \"2026-03-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzJmOWQ3OWY2MmQ0NTc1NTQ0ODkyNiIsImlhdCI6MTc3NDQ2NTIyMCwiZXhwIjoxNzc0NTUxNjIwfQ.jV8VDW9LReEvqcg0Qs2G73QIHv9h_MkV5KDPbn6iNGU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"HELLO WORLD\",\r\n  \"author\": \"Fizza Fatima\",\r\n  \"price\": 1500,\r\n  \"isbn\": \"978-123456723\",\r\n  \"publishedDate\": \"2026-03-25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzUzZTA1YjdiZDczNzczM2FmYjdhMCIsImlhdCI6MTc3NDUzNjI3NCwiZXhwIjoxNzc0NTM5ODc0fQ.O_nc-OeWKDIDauze9QEM8nicj9TIT_7wwlwgRxPQpNw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"username\": \"test123\",\r\n  \"password\": \"password123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books/69c53b1849bbbf43b3f86c51",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/books/69c53b1849bbbf43b3f86c51",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books",
+            "69c53b1849bbbf43b3f86c51"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books/69c53b1849bbbf43b3f86c51",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzU2NTgyNzc2Mzk0ZmNhYWRjYTk1MCIsImlhdCI6MTc3NDU0NDYzNCwiZXhwIjoxNzc0NTQ4MjM0fQ.UTCjSn6iLWivB0iL4HMNNmcte1Zb4NxKKA4SHRbKCMc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"The Alchemist\",\r\n  \"author\": \"Paulo Coelho\",\r\n  \"price\": 25,\r\n  \"isbn\": \"9780062315007\",\r\n  \"publishedDate\": \"1988-01-01\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books/69c53b1849bbbf43b3f86c51",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books",
+            "69c53b1849bbbf43b3f86c51"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzU2NTgyNzc2Mzk0ZmNhYWRjYTk1MCIsImlhdCI6MTc3NDU0NDYzNCwiZXhwIjoxNzc0NTQ4MjM0fQ.UTCjSn6iLWivB0iL4HMNNmcte1Zb4NxKKA4SHRbKCMc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"THE KITE RUNNER\",\r\n  \"author\": \"KHALID HOSSEINI\",\r\n  \"price\": 20,\r\n  \"isbn\": \"9890743201\",\r\n  \"publishedDate\": \"2020-10-12\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books/69c56aef776394fcaadca960",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzU2NTgyNzc2Mzk0ZmNhYWRjYTk1MCIsImlhdCI6MTc3NDU0NDYzNCwiZXhwIjoxNzc0NTQ4MjM0fQ.UTCjSn6iLWivB0iL4HMNNmcte1Zb4NxKKA4SHRbKCMc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"THE KITE RUNNER\",\r\n  \"author\": \"KHALID HOSSEINI\",\r\n  \"price\": 33,\r\n  \"isbn\": \"9890743201\",\r\n  \"publishedDate\": \"2020-10-12\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books/69c56aef776394fcaadca960",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books",
+            "69c56aef776394fcaadca960"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books/69c56aef776394fcaadca960",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5YzU2NTgyNzc2Mzk0ZmNhYWRjYTk1MCIsImlhdCI6MTc3NDU0NDYzNCwiZXhwIjoxNzc0NTQ4MjM0fQ.UTCjSn6iLWivB0iL4HMNNmcte1Zb4NxKKA4SHRbKCMc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/books/69c56aef776394fcaadca960",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books",
+            "69c56aef776394fcaadca960"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/books?search=The Alchemist",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "The Alchemist"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/api/books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/books?page=1&limit=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
