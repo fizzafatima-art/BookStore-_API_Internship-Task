@@ -49,5 +49,5 @@ A professional full-stack application for managing a bookstore, featuring User A
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/fizzafatima-art/BookStore-_API_Internship-Task]
+git clone https://github.com/fizzafatima-art/BookStore-_API_Internship-Task
 cd bookstore-api
